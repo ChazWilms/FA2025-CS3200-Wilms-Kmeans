@@ -1,0 +1,15 @@
+K-Means Benchmarking Results
+
+  dataset           type  cores avg_time std_dev_time              avg_sse     std_dev_sse
+synthetic     serial_cpp      1   0.0566       0.0007         4207279.4237    2575641.9959
+synthetic        mpi_cpp      2   0.0311       0.0003         3615613.6636    1341436.2548
+synthetic        mpi_cpp      4   0.0217       0.0026         3812412.0713    1079432.9161
+synthetic        mpi_cpp      6   0.0376       0.0041         3170375.1965    1972547.4861
+synthetic        mpi_cpp      8   0.0308       0.0056         4210106.7189    2283277.0729
+synthetic sklearn_python      1   0.0283       0.0039         4984738.3760          0.0000
+     real     serial_cpp      1   0.0180       0.0000 215833163773280.1562 5170637113.5259
+     real        mpi_cpp      2   0.0142       0.0006 215831680531819.9062  728570295.5003
+     real        mpi_cpp      4   0.0093       0.0008 215831449885474.8750  455326729.3442
+     real        mpi_cpp      6   0.0162       0.0019 215831563208952.0938  798710700.1610
+     real        mpi_cpp      8   0.0125       0.0025 215831309738882.9062   31808558.1489
+     real sklearn_python      1   0.0264       0.0007 215856050180524.0938          0.0280
